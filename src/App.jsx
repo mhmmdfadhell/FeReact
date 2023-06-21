@@ -1,13 +1,11 @@
-import ComponentProps from "./components/ComponentProps";
-function App(){
-  return(
-    //<> simbol untuk fragment
-    <>
-    <div className="flex flex-col justify-center items-center min-h-screen">
-      <ComponentProps textColor="text-lime-100" text="Hallo Gais"/>
+import { useState } from "react";
+import Counter from "./Belajar/LifeCycle/Counter";
+
+function App() {
+  return (
+    <div className="flex justify-center items-center w-full bg-white gap-x-52">
+      <Counter />
     </div>
-  
-    </>
-  ) 
+  );
 }
-export default App 
+export default App;
